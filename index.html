@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Device</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">My Device</div>
+            <div class="tagline">Телефоны типо :)</div>
+        </header>
+
+        <section class="search-section">
+            <form onsubmit="return searchDevice();">
+                <label for="searchInput">Поиск модели</label>
+                <div class="search-row">
+                    <input type="text" id="searchInput" placeholder="Например: Galaxy S24 или iPhone 15">
+                    <button type="submit">Найти</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="brands-section">
+            <div class="brands-label">Быстрый выбор бренда</div>
+            <div class="brands-grid">
+                <button onclick="filterBrand('samsung')" class="brand-btn">Samsung</button>
+                <button onclick="filterBrand('apple')" class="brand-btn">Apple</button>
+                <button onclick="filterBrand('xiaomi')" class="brand-btn">Xiaomi</button>
+                <button onclick="filterBrand('sony')" class="brand-btn">Sony</button>
+                <button onclick="filterBrand('nokia')" class="brand-btn">Nokia</button>
+                <button onclick="filterBrand('realme')" class="brand-btn">realme</button>
+                <button onclick="filterBrand('honor')" class="brand-btn">HONOR</button>
+                <button onclick="filterBrand('zte')" class="brand-btn">ZTE</button>
+                <button onclick="filterBrand('hp')" class="brand-btn">HP</button>
+                <button onclick="filterBrand('google')" class="brand-btn">Google</button>
+                <button onclick="filterBrand('oneplus')" class="brand-btn">OnePlus</button>
+                <button onclick="filterBrand('huawei')" class="brand-btn">Huawei</button>
+                <button onclick="filterBrand('motorola')" class="brand-btn">Motorola</button>
+                <button onclick="filterBrand('lg')" class="brand-btn">LG</button>
+                <button onclick="showAllDevices()" class="brand-btn brand-all">Все</button>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div id="deviceListContainer">
+                
+            </div>
+        </section>
+
+        <footer>
+            My Device (MD)
+        </footer>
+    </div>
+
+    <script src="devices.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
