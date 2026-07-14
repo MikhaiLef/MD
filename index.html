@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Device</title>
+    <title>My Device — каталог телефонов</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="wrapper">
         <header>
             <div class="logo">My Device</div>
-            <div class="tagline">Телефоны типо :)</div>
+            <div class="tagline">Телеон типо :)</div>
         </header>
 
         <section class="search-section">
@@ -34,6 +34,7 @@
                 <button onclick="filterBrand('realme')" class="brand-btn">realme</button>
                 <button onclick="filterBrand('honor')" class="brand-btn">HONOR</button>
                 <button onclick="filterBrand('zte')" class="brand-btn">ZTE</button>
+                <button onclick="filterBrand('asus')" class="brand-btn">ASUS</button>
                 <button onclick="filterBrand('hp')" class="brand-btn">HP</button>
                 <button onclick="filterBrand('google')" class="brand-btn">Google</button>
                 <button onclick="filterBrand('oneplus')" class="brand-btn">OnePlus</button>
@@ -46,12 +47,13 @@
 
         <section class="results-section">
             <div id="deviceListContainer">
-                
+                <!-- список устройств -->
             </div>
         </section>
 
         <footer>
-            My Device (MD)
+            <span>My Device &middot;</span>
+            <span style="margin-left: 20px;"><a href="pls.html" style="color: #4a6cf7; text-decoration: none; font-weight: 500;">Обратная связь</a></span>
         </footer>
     </div>
 
